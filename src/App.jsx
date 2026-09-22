@@ -32,7 +32,7 @@ function App() {
     const queryCity = firstLoad ? "London" : city;
 
     fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${encodeURIComponent(queryCity)}&days=7&aqi=no&alerts=no`,
+      `https://api.weatherapi.com/v1/forecast.json?key=${API_KEY}&q=${encodeURIComponent(queryCity)}&days=7&aqi=no&alerts=no`,
       { signal },
     )
       .then(async (res) => {
